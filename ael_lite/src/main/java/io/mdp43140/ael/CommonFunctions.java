@@ -46,7 +46,7 @@ public class CommonFunctions {
 	}
 	public static final boolean canPostNotification(Context ctx){
 		return Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU ||
-			ctx.checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED
+			ctx.checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED;
 	}
 	public static final void shareFile(Context ctx, String text, String mimeType) {
 		Intent intent = new Intent(Intent.ACTION_SEND);

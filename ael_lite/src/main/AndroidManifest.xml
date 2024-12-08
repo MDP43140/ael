@@ -14,6 +14,6 @@
 			android:name=".ErrorActivity"
 			android:roundIcon="@drawable/ic_bug"
 			android:supportsRtl="true"
-			android:theme="@style/ErrLoggerTheme"/>
+			android:theme="@style/AEL_Theme"/>
 	</application>
 </manifest>
