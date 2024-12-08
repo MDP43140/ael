@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	~ SPDX-FileCopyrightText: 2024 MDP43140
+	~ SPDX-License-Identifier: GPL-3.0-or-later
+	-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="12dp"
+	tools:context=".ErrorActivity">
+	<TextView
+		android:fontFamily="sans-serif-medium"
+		android:gravity="center"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginTop="8dp"
+		android:layout_marginBottom="8dp"
+		android:text="@string/errLog_msg"
+		android:textAlignment="center"
+		android:textSize="19dp" />
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="8dp"
+		android:text="@string/details"
+		android:textSize="17dp" />
+	<ScrollView
+		android:background="@drawable/rounded_view"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:scrollbarSize="24dp">
+		<HorizontalScrollView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:scrollbarSize="24dp">
+			<TextView
+				android:id="@+id/error"
+				android:textIsSelectable="true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="12dp" />
+		</HorizontalScrollView>
+	</ScrollView>
+	<Button
+		android:id="@+id/shareLogBtn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:layout_marginBottom="0dp"
+		android:text="@string/share" />
+	<Button
+		android:id="@+id/shareFormattedLogBtn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:layout_marginBottom="0dp"
+		android:text="@string/errLog_shareLogFormatted" />
+	<Button
+		android:visibility="gone"
+		android:id="@+id/reportIssueBtn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:layout_marginBottom="0dp"
+		android:text="@string/errLog_reportIssue" />
+</LinearLayout>

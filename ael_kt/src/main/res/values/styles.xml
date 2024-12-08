@@ -1,0 +1,10 @@
+<!--
+	~ SPDX-FileCopyrightText: 2024 MDP43140
+	~ SPDX-License-Identifier: GPL-3.0-or-later
+	-->
+<resources xmlns:tools="http://schemas.android.com/tools">
+	<style name="AEL_Theme" parent="Theme.Material3.DayNight">
+		<!-- fixes some UI issues on MIUI devices -->
+		<item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+	</style>
+</resources>

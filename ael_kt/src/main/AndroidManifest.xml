@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	~ SPDX-FileCopyrightText: 2024 MDP43140
+	~ SPDX-License-Identifier: GPL-3.0-or-later
+	-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- Required to send error notification on Android 12+ (you can optionally not use the send notification feature though) -->
+	<uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+	<application>
+		<activity
+			android:exported="false"
+			android:icon="@drawable/ic_bug"
+			android:label="@string/errLog"
+			android:name=".ErrorActivity"
+			android:roundIcon="@drawable/ic_bug"
+			android:supportsRtl="true"
+			android:theme="@style/AEL_Theme"/>
+	</application>
+</manifest>
