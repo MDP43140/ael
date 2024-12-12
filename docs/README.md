@@ -2,9 +2,8 @@
 Yet another error logger for
 your beloved Android apps
 
-[![Android CI](https://github.com/MDP43140/ael/actions/workflows/android.yml/badge.svg?branch=main)](https://github.com/MDP43140/ael/actions/workflows/android.yml)
-[![GitHub issues](https://img.shields.io/github/issues/mdp43140/ael)](/issues)
-[![License](https://img.shields.io/github/license/mdp43140/ael)](/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/mdp43140/ael)](https://github.com/MDP43140/ael/issues)
+[![License](https://img.shields.io/github/license/mdp43140/ael)](/LICENSE)
 
 ## Features:
 + Easy-to-implement (see Usage section)
@@ -17,9 +16,9 @@ your beloved Android apps
 - Known issue: Notification crash didnt show new log
 
 ## Screenshots:
-![Default Error report UI, using AndroidX + Kotlin](ael_default.png)
-![Custom error report UI, using AndroidX + Kotlin, custom color, button link](ael_custom.png)
-![Error Notification](ael_notification.png)
+<img width="200" src="ael_default.png" alt="Default Error report UI, using AndroidX + Kotlin">
+<img width="200" src="ael_custom.png" alt="Custom error report UI, using AndroidX + Kotlin, custom color, button link">
+<img width="200" src="ael_notification.png" alt="Error Notification">
 
 ## Usage:
 AndroidErrorLogger is available at JitPack's Maven repo, or as standalone .aar file in releases section.
@@ -38,11 +37,12 @@ There are 2 `variant`s:
 
 See the included demo for how to use and more:
 Initialize global error catcher (recommended for majority of use-cases):
-- [App (Kotlin)](/blob/main/app/src/main/java/com/example/App.kt)
-- [App (Java)](/blob/main/app/src/main-java/java/com/example/App.kt)
+- [App (Kotlin)](/app/src/main/java/com/example/App.kt)
+- [App (Java)](/app/src/main-java/java/com/example/App.kt)
+
 Crasher code example, with try-catch:
-- [MainActivity (Kotlin)](/blob/main/app/src/main/java/com/example/MainActivity.kt)
-- [MainActivity (Java)](/blob/main/app/src/main-java/java/com/example/MainActivity.kt)
+- [MainActivity (Kotlin)](/app/src/main/java/com/example/MainActivity.kt)
+- [MainActivity (Java)](/app/src/main-java/java/com/example/MainActivity.kt)
 
 ### Code "optimization"
 If you're using ProGuard (or any other obfuscation/"optimization" tricks),
