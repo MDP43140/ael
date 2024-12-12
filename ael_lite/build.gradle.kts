@@ -53,4 +53,9 @@ android {
 			useLegacyPackaging = false
 		}
 	}
+	publishing {
+		singleVariant("release") {
+			withSourcesJar()
+		}
+	}
 }
