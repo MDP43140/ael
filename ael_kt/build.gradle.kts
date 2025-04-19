@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 plugins {
-	id("com.android.library")
-	kotlin("android")
+	alias(libs.plugins.android.library)
+	alias(libs.plugins.kotlin.android)
 }
 kotlin {
 	jvmToolchain(21)
@@ -67,7 +67,7 @@ android {
 	}
 }
 dependencies {
-	implementation("androidx.appcompat:appcompat:1.7.0")
-	implementation("androidx.core:core-ktx:1.15.0")
-	implementation("com.google.android.material:material:1.12.0")
+	implementation(libs.androidx.appcompat)
+	implementation(libs.androidx.kt)
+	implementation(libs.material)
 }

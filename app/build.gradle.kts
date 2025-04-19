@@ -6,7 +6,7 @@ import java.util.Properties // used by signingConfigs.release (ksProps variable)
 import com.android.build.gradle.tasks.PackageAndroidArtifact // used by empty app-metadata.properties
 
 plugins {
-	id("com.android.application")
+	alias(libs.plugins.android.application)
 }
 android {
 	compileSdk = 35

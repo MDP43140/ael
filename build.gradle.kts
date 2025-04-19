@@ -3,11 +3,10 @@ allprojects {
 	group = "com.github.mdp43140.ael"
 }
 plugins {
-//auto suffixed with .gradle.plugin
-	id("com.android.application") version "8.7.3" apply false
-	id("com.android.library") version "8.7.3" apply false
+	alias(libs.plugins.android.application) apply false
+	alias(libs.plugins.android.library) apply false
+	alias(libs.plugins.kotlin.android) apply false
 	id("maven-publish")
-	kotlin("android") version "2.1.0" apply false // kotlin("android") == "org.jetbrains.kotlin.android"
 }
 tasks.withType(JavaCompile::class.java){
 	options.compilerArgs.add("-Xlint:all")
