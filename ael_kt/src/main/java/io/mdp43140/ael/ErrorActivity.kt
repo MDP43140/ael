@@ -27,8 +27,7 @@ class ErrorActivity: AppCompatActivity(){
 		val appVersion = packageManager.getPackageInfo(packageName,0).versionName
 		val appLang = Locale.getDefault().language
 		val osVersion = (System.getProperty("os.name") ?: "Android") +
-			(if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) " ${Build.VERSION.BASE_OS} " else " ") +
-			Build.VERSION.RELEASE + " - " + Build.VERSION.SDK_INT
+			" ${Build.VERSION.BASE_OS} ${Build.VERSION.RELEASE} - ${Build.VERSION.SDK_INT}"
 		val msg = intent.getStringExtra(Constants.EXTRA_MESSAGE) ?: "No message?"
 		// why not DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm").format(LocalDateTime.now())?
 		// cuz on A7-, it throws ClassDefNotFound error :(

@@ -15,7 +15,7 @@ android {
 	namespace = "com.example"
 	defaultConfig {
 		applicationId = "io.mdp43140.ael.test"
-		minSdk = 21
+		minSdk = 24
 		targetSdk = compileSdk
 		versionCode = 1
 		versionName = "1.0.0"
@@ -37,6 +37,7 @@ android {
 				storeFile = file(ksProps["storeFile"] as String)
 				storePassword = ksProps["storePassword"] as String
 			}
+			enableV1Signing = false
 		}
 	}
 	lint {
