@@ -7,7 +7,7 @@ class App: Application(){
 	override fun attachBaseContext(base: Context){
 		super.attachBaseContext(base);
 		// should only be initialized once
-		if (!ErrorLogger.instance){
+		if (ErrorLogger.instance == null){
 			ErrorLogger(base)
 			ErrorLogger.instance?.apply {
 				// Set your URL where to report errors

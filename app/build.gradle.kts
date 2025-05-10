@@ -7,6 +7,7 @@ import com.android.build.gradle.tasks.PackageAndroidArtifact // used by empty ap
 
 plugins {
 	alias(libs.plugins.android.application)
+	alias(libs.plugins.kotlin.android)
 }
 android {
 	compileSdk = 35
