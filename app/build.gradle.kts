@@ -90,10 +90,13 @@ android {
 			excludes += listOf(
 				"assets/dexopt/baseline.prof",
 				"assets/dexopt/baseline.profm",
+				"junit/runner/logo.gif",
+				"junit/runner/smalllogo.gif",
 				"kotlin/**.kotlin_builtins",
 				"META-INF/**",
 				"DebugProbesKt.bin",
-				"kotlin-tooling-metadata.json"
+				"kotlin-tooling-metadata.json",
+				"LICENSE-junit.txt"
 			)
 		}
 	}
