@@ -1,5 +1,5 @@
 allprojects {
-	version = "1.0.0"
+	version = "1.1.0"
 	group = "com.github.mdp43140.ael"
 }
 plugins {
@@ -27,7 +27,7 @@ subprojects {
 						}
 						groupId = "com.github.mdp43140"
 						artifactId = project.name
-						version = "1.0.0"
+						version = "1.1.0"
 					}
 				}
 			}
