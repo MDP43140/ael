@@ -6,5 +6,7 @@
 	<style name="AEL_Theme" parent="@android:style/Theme.Material">
 		<!-- fixes some UI issues on MIUI devices -->
 		<item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+		<!-- fixes visual bug on Android 15 -->
+		<item name="android:fitsSystemWindows" tools:targetApi="v">true</item>
 	</style>
 </resources>
