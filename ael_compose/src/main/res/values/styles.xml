@@ -1,0 +1,12 @@
+<!--
+	~ SPDX-FileCopyrightText: 2024-2025 MDP43140
+	~ SPDX-License-Identifier: GPL-3.0-or-later
+	-->
+<resources xmlns:tools="http://schemas.android.com/tools">
+	<style name="AEL_Theme" parent="Theme.Material3.DayNight">
+		<!-- fixes some UI issues on MIUI devices -->
+		<item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+		<!-- fixes visual bug on Android 15 -->
+		<item name="android:fitsSystemWindows" tools:targetApi="v">true</item>
+	</style>
+</resources>

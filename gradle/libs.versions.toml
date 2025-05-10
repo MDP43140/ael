@@ -1,16 +1,28 @@
 [versions]
 agp = "8.10.0"
+androidxActivity = "1.10.1"
 androidxAppcompat = "1.7.0"
+androidxComposeMaterial = "1.3.2"
+androidxComposeUi = "1.8.0"
 androidxCore = "1.16.0"
+androidxLifecycle = "2.8.7"
+androidxNav = "2.5.3"
 kotlin = "2.1.20"
 material = "1.12.0"
 
 [libraries]
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivity" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "androidxComposeUi" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "androidxComposeUi" }
+androidx-compose-material = { group = "androidx.compose.material3", name = "material3", version.ref = "androidxComposeMaterial" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppcompat" }
 androidx-kt = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
+androidx-lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidxLifecycle" }
+androidx-nav-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "androidxNav" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

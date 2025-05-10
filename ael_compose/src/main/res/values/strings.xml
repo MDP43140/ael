@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	~ SPDX-FileCopyrightText: 2024-2025 MDP43140
+	~ SPDX-License-Identifier: GPL-3.0-or-later
+	-->
+<resources>
+	<string name="errLog">Error report</string>
+	<string name="errLog_notification_sum">Shows notification about app errors</string>
+	<string name="errLog_msg">Sorry, that shouldn\'t happen :(</string>
+	<string name="errLog_shareLogFormatted">Share formatted log</string>
+	<string name="errLog_reportIssue">Report Issue</string>
+	<string name="details">Details</string>
+	<string name="share">Share</string>
+</resources>

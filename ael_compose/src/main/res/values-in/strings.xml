@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	~ SPDX-FileCopyrightText: 2024-2025 MDP43140
+	~ SPDX-License-Identifier: GPL-3.0-or-later
+	-->
+<resources>
+	<string name="errLog">Laporan kesalahan</string>
+	<string name="errLog_notification_sum">Menunjukkan pemberitahuan mengenai kesalahan aplikasi</string>
+	<string name="errLog_msg">Maaf, hal tersebut seharusnya tidak terjadi :(</string>
+	<string name="errLog_shareLogFormatted">Bagikan log yang diformat</string>
+	<string name="errLog_reportIssue">Laporkan Masalah</string>
+	<string name="details">Rincian</string>
+	<string name="share">Bagikan</string>
+</resources>

@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Android Error Logger"
-include(":app",":ael_kt",":ael_lite")
+include(":app",":ael_compose",":ael_kt",":ael_lite")

@@ -31,9 +31,10 @@ Add `implementation("com.github.mdp43140.ael:VARIANT:VERSION")` to the `dependen
 
 Replace `VERSION` with [release version](/releases) or [any commit](/commits).
 
-There are 2 `variant`s:
-- `ael-kt` (uses Kotlin + AndroidX, preferred variant)
-- `ael-lite` (Doesn't use AndroidX + Kotlin)
+There are 3 `variant`s:
+- `ael-compose` (uses Kotlin + Compose, modern experimental variant, preferred for compose-only apps)
+- `ael-kt` (uses Kotlin + AndroidX, preferred variant, recommended for non-compose apps)
+- `ael-lite` (Doesn't use AndroidX + Kotlin, lightweight, no extra dependency)
 
 See the included demo for how to use and more:
 Initialize global error catcher (recommended for majority of use-cases):
@@ -66,11 +67,11 @@ Activities made by this library uses style `AEL_Theme` which inherits from `Them
 you can make it inherit your theme to make it more coherent with your whole app
 
 ## TODO:
+- Compose variant
 - Pressing error report from notification wont show latest error (sometimes empty?)
 	(eg. error A occurred, user pressed notification, sees error A, later error B
 	occured, user pressed notification, but instead of seeing error B, user still sees
 	error A), need full reboot or full clean reinstall of the app
-- Compose variant? (low priority, because its REALLY BIG (compose adds up 50MB+!!!))
 
 ## License
 [![GNU GPL v3](https://www.gnu.org/graphics/gplv3-127x51.png)](https://www.gnu.org/licenses/gpl-3.0.en.html)
