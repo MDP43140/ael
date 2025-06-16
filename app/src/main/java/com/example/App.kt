@@ -5,7 +5,7 @@ import android.content.Context
 import io.mdp43140.ael.ErrorLogger
 class App: Application(){
 	override fun attachBaseContext(base: Context){
-		super.attachBaseContext(base);
+		super.attachBaseContext(base)
 		// should only be initialized once
 		if (ErrorLogger.instance == null){
 			ErrorLogger(base)

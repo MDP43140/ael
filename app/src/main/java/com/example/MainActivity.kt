@@ -16,11 +16,11 @@ class MainActivity: Activity(){
 				} catch (e: Exception){
 					ErrorLogger.instance?.handleError(e)
 				}
-			};
+			}
 			btn2.setOnClickListener {
 				// do something
 				throw Exception("Uncaught Exception goes through ErrorLogger...")
-			};
+			}
 			setContentView(root)
 		}
 	}
