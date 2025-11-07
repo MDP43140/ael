@@ -28,12 +28,6 @@ android {
 			isJniDebuggable = false
 			isPseudoLocalesEnabled = false
 			proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-		//postprocessing {
-		//	isRemoveUnusedCode = true
-		//	isRemoveUnusedResources = true
-		//	isObfuscate = false
-		//	isOptimizeCode = true
-		//}
 		}
 	}
 	compileOptions {
