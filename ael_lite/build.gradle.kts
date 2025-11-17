@@ -6,8 +6,8 @@ plugins {
 	alias(libs.plugins.android.library)
 }
 android {
-	compileSdk = 35
-	buildToolsVersion = "35.0.0"
+	compileSdk = 36
+	buildToolsVersion = "36.0.0"
 	namespace = "io.mdp43140.ael"
 	defaultConfig {
 		minSdk = 21
