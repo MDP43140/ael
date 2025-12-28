@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Intent;
+import android.graphics.Insets;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Build;
@@ -15,6 +16,7 @@ import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.view.View;
+import android.view.WindowInsets;
 import io.mdp43140.ael.databinding.ActivityErrorBinding;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -25,6 +27,22 @@ public class ErrorActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		binding = ActivityErrorBinding.inflate(getLayoutInflater());
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU){
+			// Handle Edge-to-edge
+			findViewById(android.R.id.content).setOnApplyWindowInsetsListener((View v, WindowInsets windowInsets) -> {
+				Insets insets = windowInsets.getInsets(
+					WindowInsets.Type.systemBars() |
+					WindowInsets.Type.displayCutout()
+				);
+				v.setPadding(
+					insets.left,
+					insets.top,
+					insets.right,
+					insets.bottom
+				);
+				return WindowInsets.CONSUMED;
+			});
+		}
 		ErrorActivity self = this;
 		String appVersion = "[unable to get app version]";
 		try {

@@ -6,8 +6,5 @@
 	<style name="AEL_Theme" parent="Theme.Material3.DayNight">
 		<!-- fixes some UI issues on MIUI devices -->
 		<item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
-		<!-- Temporary workaround for visual bug on Android 15 until edge-to-edge is implemented -->
-		<!--item name="android:fitsSystemWindows" tools:targetApi="35">true</item-->
-		<item name="android:windowOptOutEdgeToEdgeEnforcement" tools:targetApi="35">true</item>
 	</style>
 </resources>

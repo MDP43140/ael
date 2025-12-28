@@ -11,6 +11,7 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
+import android.view.WindowInsets
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -23,6 +24,22 @@ class ErrorActivity: AppCompatActivity(){
 	override fun onCreate(savedInstanceState: Bundle?){
 		super.onCreate(savedInstanceState)
 		binding = ActivityErrorBinding.inflate(layoutInflater)
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU){
+			// Handle Edge-to-edge
+			binding.root.setOnApplyWindowInsetsListener { v, windowInsets ->
+				val insets = windowInsets.getInsets(
+					WindowInsets.Type.systemBars() or
+					WindowInsets.Type.displayCutout()
+				)
+				v.setPadding(
+					insets.left,
+					insets.top,
+					insets.right,
+					insets.bottom
+				)
+				WindowInsets.CONSUMED
+			}
+		}
 		val self: ErrorActivity = this
 		val appVersion = packageManager.getPackageInfo(packageName,0).versionName
 		val appLang = Locale.getDefault().language
