@@ -7,7 +7,7 @@ plugins {
 	alias(libs.plugins.kotlin.android)
 }
 kotlin {
-	jvmToolchain(21)
+	jvmToolchain(25)
 }
 android {
 	compileSdk = 36
@@ -33,13 +33,6 @@ android {
 			isPseudoLocalesEnabled = false
 			proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
 		}
-	}
-	kotlinOptions {
-		jvmTarget = JavaVersion.VERSION_21.toString()
-	}
-	compileOptions {
-		sourceCompatibility = JavaVersion.VERSION_21
-		targetCompatibility = JavaVersion.VERSION_21
 	}
 	buildFeatures {
 		buildConfig = false
